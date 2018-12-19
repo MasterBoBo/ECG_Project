@@ -2,7 +2,9 @@
   <dictionary name="brian">
     <words>
       <w>conclu</w>
+      <w>ndarray</w>
       <w>quan</w>
+      <w>rpoints</w>
       <w>tesseract</w>
     </words>
   </dictionary>
