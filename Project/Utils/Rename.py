@@ -10,12 +10,16 @@
 
 import os
 
-Path = '/Users/brian/MyProjects/ECG_Project/yyyyyyy'
+Path = '/Users/brian/MyProjects/心电图/18/'
 f = os.listdir(Path)
+for i in f:
+    if not i.endswith('jpg'):
+        f.remove(i)
 print(f)
 n = 0
 for i in f:
     oldName = Path + f[n]
-    newName = Path + '12-' + str(n + 1) + '.jpg'
+    newName = Path + '18-' + str(n + 1) + '.jpg'
     os.renames(oldName, newName)
     n += 1
+    print(newName)
